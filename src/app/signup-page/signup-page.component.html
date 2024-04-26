@@ -1,0 +1,28 @@
+<div class="container">
+  <form class="form" [formGroup]="formGroup">
+    <span class="form-title">Join now</span>
+
+    <p-floatLabel>
+      <input
+        id="username"
+        type="text"
+        pInputText
+        formControlName="username" />
+      <label for="username">Username</label>
+    </p-floatLabel>
+
+    <p-floatLabel>
+      <input
+        id="password"
+        type="text"
+        pInputText
+        formControlName="password" />
+      <label for="password">Password</label>
+    </p-floatLabel>
+
+    <p-button
+      label="Submit"
+      icon="pi pi-check"
+      (onClick)="submit()"></p-button>
+  </form>
+</div>
